@@ -27,7 +27,7 @@ const PlayerBio = () => {
         {field: "team", headerName: "Team"},
         {field: "opponent", headerName: "Opponent"},
         {field: "outcomeFormatted", headerName: "W or L"},
-        {field: "ppg", headerName: "PPG"},
+        {field: "pts", headerName: "PTS"},
         {field: "ast", headerName: "AST"},
         {field: "blk", headerName: "BLK"},
         {field: "reb", headerName: "REB"},
