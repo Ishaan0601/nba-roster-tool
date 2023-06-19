@@ -3,8 +3,10 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
+//import { updateScoutForm } from "../../addScoutingFormData"
 
 const initialValues = {
+    id:"",
     date:"",
     scout:"",
     dxId:"",
@@ -29,7 +31,18 @@ const Form = () => {
     const isNonMobile = useMediaQuery("(min-width:600px)")
 
     const handleFormSubmit = (values) => {
-        console.log(values);
+        //values.preventDefault();
+        values.id = values.date + "_Sample Report";
+        fetch("http://localhost:8000/scoutingReports",{
+            method: "POST",
+            headers:{"content-type":"application/json"},
+            body: JSON.stringify(values)
+        }).then((res)=>{
+            alert('Saved Successfully')
+        }).catch((err)=>{
+           console.log(err.message) 
+        })
+        //updateScoutForm(values);
     }
 
     return(

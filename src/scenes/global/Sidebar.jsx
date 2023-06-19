@@ -4,7 +4,6 @@ import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
@@ -118,7 +117,7 @@ const Sidebar = () => {
             <Item
               title="Team Statistics"
               to="/"
-              icon={<PeopleOutlinedIcon />}
+              icon={<SportsBasketballIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -147,20 +146,6 @@ const Sidebar = () => {
               title="Schedule"
               to="/schedule"
               icon={<CalendarTodayOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              Other
-            </Typography>
-            <Item
-              title="NBA Teams"
-              to="/other-teams"
-              icon={<SportsBasketballIcon />}
               selected={selected}
               setSelected={setSelected}
             />

@@ -31,7 +31,7 @@ const Homepage = () => {
 
     return <Box m = "20px">
         <Box display = "flex" justifyContent="start" allignItems = "center">
-            <Header title = "TEAM STATISTICS" subtitle = "Currently displaying Miami Heat Data"/>
+            <Header title = "NBA TEAM STATISTICS" subtitle = "View Information Below"/>
         </Box>
         <Box m = "40px 0 0 0" height = "75vh" sx = {{
                 "& .MuiDataGrid-root": {
