@@ -1,4 +1,4 @@
-import { Box, Button, IconButton, Typography, useTheme, Grid } from "@mui/material";
+import { Box, useTheme, Grid } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import {Image} from 'mui-image'
@@ -12,7 +12,7 @@ const PlayerBio = () => {
     const colors = tokens(theme.palette.mode);
 
     useEffect(() => {
-        fetch('http://localhost:8000/scoutingReports')
+        fetch('https://olivine-whispering-ear.glitch.me/scoutingReports')
         .then(res => res.json())
         .then(data => setReport(data))
     },[])

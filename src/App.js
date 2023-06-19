@@ -7,7 +7,7 @@ import Teampage from "./scenes/teampage";
 import ScoutForm from "./scenes/scoutingForm";
 import Schedule from "./scenes/calendar";
 import PlayerBio from "./scenes/playerBio";
-// import Roster from "./scenes/createRoster";
+
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -25,7 +25,6 @@ function App() {
               <Route path = "/scouting-form" element = {<ScoutForm/>}></Route>
               <Route path = "/schedule" element = {<Schedule/>}></Route> 
               <Route path = "/player-info" element = {<PlayerBio/>}></Route>
-              {/* <Route path = "/roster" element = {<Roster/>}></Route> */}
             </Routes>
           </main>
         </div>

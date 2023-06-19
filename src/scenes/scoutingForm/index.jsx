@@ -33,7 +33,7 @@ const Form = () => {
     const handleFormSubmit = (values) => {
         //values.preventDefault();
         values.id = values.date + "_Sample Report";
-        fetch("http://localhost:8000/scoutingReports",{
+        fetch("https://olivine-whispering-ear.glitch.me/scoutingReports",{
             method: "POST",
             headers:{"content-type":"application/json"},
             body: JSON.stringify(values)

@@ -1,5 +1,5 @@
 import React from "react";
-import {Card,CardContent, CardHeader, IconButton, Typography} from "@mui/material";
+import {Card,CardContent, CardHeader, Typography} from "@mui/material";
 
 const ScoutCard = ({ report }) => {
     // const theme = useTheme();
