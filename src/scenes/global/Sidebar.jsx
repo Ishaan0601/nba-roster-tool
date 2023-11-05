@@ -97,7 +97,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                Mavericks
+                NBA Roster Tool
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   Created by Ishaan Virani
